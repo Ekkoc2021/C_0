@@ -1,11 +1,12 @@
 # ch6
 
 ## whileÓï¾ä
+
 ```
 while(expression) statement
 ```
-µ±expressionµÄÔËËãÖµ²»Îª0Ê±ÔòÂú×ãÑ­»·Ìõ¼þ
 
+µ±expressionµÄÔËËãÖµ²»Îª0Ê±ÔòÂú×ãÑ­»·Ìõ¼þ
 
 ÕâÀïµÄexpression¿ÉÒÔÊÇ¸³ÖµÓï¾ä,±ÈÈça=1,whileÑ­»·ÖÐÃ¿´Î½øÐÐÌõ¼þÅÐ¶ÏÓï¾äÊ±,¶¼»áÏÈ½«a¸³ÖµÎª1,ÔÚµÃµ½aµÄÖµ×÷ÎªÊÇ·ñ½øÈëÑ­»·µÄÌõ¼þ,ÎÞÏÞÑ­»·!ÆäËûÓïÑÔÕâÖÖÐ´·¨¿ÉÄÜ±àÒë²»»áÍ¨¹ý,µ«ÊÇcÖÐÈ´¿ÉÒÔ,ÏëÏóÒ»ÏÂ,Äã½«a==1²»Ð¡ÐÄÐ´³ÉÁËa=1,»áÊÇÊ²Ã´ºó¹û!
 
@@ -35,20 +36,23 @@ stdbool.hÕâ¸öÍ·ÎÄ¼þÖÐ°üº¬ÁËboolÕâ¸öÀàÐÍ,ºÍ_BoolÒ»Ñù.Í¬Ê±ÒýÈëÁËtrueºÍfalseÕâÁ½¸ö±
 ¹ØÏµÔËËã·ûµÄÓÅÏÈ¼¶µÍÓÚËãÊõÔËËã·û
 
 ¹ØÏµÔËËã·ûÖ®¼äµÄÓÅÏÈ¼¶
+
 - ¸ßÓÅÏÈ¼¶×é : \< <= > >=
 - µÍÓÅÏÈ¼¶×é : == !=
 
 ## forÑ­»·
+
 ```
 for (initialize;test;update)statement
 ```
+
 - initialize±í´ïÊ½ÊÇ³õÊ¼»¯,Ö»ÓÐµÚÒ»´Î½øÈëÑ­»·»áÖ´ÐÐ,Ò»°ã³õÊ¼»¯Ò»¸ö±äÁ¿
 - test±í´ïÊ½½øÐÐÅÐ¶ÏÊÇ·ñ½øÈëÑ­»·,Ò»°ãÓÃ¹ØÏµÔËËã¶Ô³õÊ¼±äÁ¿½øÐÐÔËËã
 - update±í´ïÊ½½øÐÐ¸üÐÂ,Ò»°ã¸üÐÂ³õÊ¼»¯Ò»¸ö±äÁ¿µÄÖµ
 
 ## ¸ü¶à¸³ÖµÔËËã·û
 
-- += 
+- +=
 - -=
 - *=
 - /=
@@ -65,13 +69,16 @@ a+=6*9-3 ===> a=a+(6*9-3)
 ¶ººÅ±í´ïÊ½µÄÇóÖµ¹ý³Ì´Ó×óµ½ÓÒ½øÐÐ£¬Ã¿¸ö±í´ïÊ½°´ÕÕË³ÐòÒÀ´ÎÇóÖµ¡£Õû¸ö±í´ïÊ½µÄÖµÊÇ×îºóÒ»¸ö±í´ïÊ½µÄÖµ¡£
 
 ¹ý¶È¸´ÔÓ»òÀÄÓÃ¶ººÅ±í´ïÊ½¿ÉÄÜ»áµ¼ÖÂ´úÂëÄÑÒÔÀí½âºÍÎ¬»¤
+
 ```
 int a=1,b=2; //¶¨Òå¶à¸ö±äÁ¿
 a=10,b=20; //¸³Öµ¶à±äÁ¿
 ```
+
 ¶¨Òå¶à¸ö±äÁ¿Ö»Ö§³ÖÍ¬ÀàÐÍ
 
 Ó¦¸ÃÃ»ÈË»áÕâÃ´ÓÃ:
+
 ```
 h=100,200; //Ïàµ±ÓÚh=100;200; Ò²¾ÍÊÇËµh=100
 h=(100,200); //h=200;
@@ -84,11 +91,13 @@ h=(y=10,100+y/2+y*10); // ÏÈ¸øy¸³ÖµÎª10,ÔÚ¼ÆËã100+y/2+y*10,×îºóh=µÚ¶þ¸ö±íÊ¾½á¹û
 ÔÚforÑ­»·ÀïÃæ¿ÉÒÔÍ¨¹ý¶ººÅ±í´ïÊ½³õÊ¼»¯¶à¸ö²ÎÊý,¸üÐÂ¶à²ÎÊý.
 
 ## do while Ñ­»·
+
 ```
 do 
     statement 
 while(expression);
 ```
+
 `do while` ÊÇÒ»ÌõÓï¾ä,ËùÒÔÒªÒÔ;½áÎ²,¿ÉÒÔÀí½âÎª¾ÍÊÇÓï·¨¹æ¶¨ÒÔ·ÖºÅ½áÎ².
 
 ## Êý×é
@@ -96,5 +105,6 @@ while(expression);
 ¶¨ÒåÊý×é±äÁ¿,±äÁ¿¼ÇÂ¼ÁË¸ÃÊý×éµÄÆðÊ¼µØÖ·,Ñ°Ö·µÄÊ±ºò°´ÕÕ¹æ¶¨µÄÊý¾ÝÀàÐÍ´óÐ¡½øÐÐÑ°Ö·.
 
 cµÄÊý×é²¢²»»á¼ì²é½Ç±êÔ½½çÎÊÌâ,Ô½½ç¿ÉÄÜ»á´øÀ´ÕâÐ©ÎÊÌâ:
+
 - ·ÃÎÊÔ½½ç£º·ÃÎÊµ½Î´·ÖÅä¸øÊý×éµÄÄÚ´æ¿Õ¼ä¡£Õâ¿ÉÄÜµ¼ÖÂ³ÌÐò±ÀÀ£¡¢Êý¾ÝËð»µ»òÎ´¶¨ÒåµÄÐÐÎª¡£
 - ÄÚ´æ°²È«ÎÊÌâ£º¿ÉÄÜ»áÓ°Ïìµ½ÆäËû±äÁ¿»òÊý¾Ý½á¹¹µÄÄÚ´æÇøÓò£¬µ¼ÖÂÄÚ´æ°²È«ÎÊÌâ£¬Èç»º³åÒç³ö¡¢Êý¾Ý¸²¸ÇµÈ¡£

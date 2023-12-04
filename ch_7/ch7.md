@@ -3,28 +3,21 @@
 ## if语句
 
 ```
-if (expression)
-    statement
+if (expression) statement
 ```
 
 expression为1 则执行statement
 
 带else的if语句
+
 ```
-if (expression)
-    statement1
-else
-    statement2
+if (expression) statement1 else  statement2
 ```
 
 多重选择 else if
+
 ```
-if (expression1)
-    statement1
-else if (expression2)
-    statement2
-else
-    statement3
+if (expression1) statement1 else if (expression2) statement2 else statement3
 ```
 
 在多重if else 语句中,如果statement不是复合语句(也就是没有花括号),else会自动与第一个if进行匹配,这种机制可能会导致程序行为与预期的不一致
@@ -32,20 +25,24 @@ else
 最好是无论是否是多条语句都用花括号括起来
 
 ## getchar 和 putchar函数
+
 两个函数都在stdio.h中定义
+
 - getchar(): 获取来自设备输入的下一个字符
 - putchar(char c): 打印传入一个char类型c
 
 ## ctype.h 头文件
+
 包含一系列字符处理函数,如isalpha()...
 
-
 ## 逻辑运算符
+
 - && 与
 - || 或
 - ! 非
 
 只要包含了 iso646.h头文件就可以使用以下表示法表示逻辑运算符
+
 - && = and
 - || = or
 - ! = not
@@ -71,12 +68,12 @@ else
 ```
 expression1 ? expression2 : expression3
 ```
+
 如果 expression1为真 则整个表达式值为expression2 否则为expression3
 
 ```
 max=a>b ? a : b ;// 取a,b中最大值
 ```
-
 
 ## 循环辅助手段:continue,break
 
@@ -100,6 +97,7 @@ switch (expression) {
 }
 
 ```
+
 expression通常是一个变量,变量类型可以是整数类型（如int、char、short、long等）或枚举类型。这意味着只有整数类型和枚举类型的变量可以用作switch语句的表达式。(**没有包含浮点类型**)
 
 constant 必须是编译时可确定的常量值，而不能是变量。这是因为switch语句在编译时进行静态分析，并生成相应的跳转表来实现快速的条件分支

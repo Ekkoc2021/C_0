@@ -2,6 +2,14 @@
     "files.associations": {
         "stdio.h": "c",
         "float.h": "c",
-        "algorithm": "c"
-    }
+        "algorithm": "c",
+        "typeinfo": "c",
+        "array": "c",
+        "string": "c",
+        "string_view": "c",
+        "stdbool.h": "c",
+        "string.h": "c",
+        "cstdlib": "c"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }
